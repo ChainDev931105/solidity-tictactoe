@@ -1,0 +1,117 @@
+{
+  "contractName": "Tictactoe",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Tictactoe.sol\":\"Tictactoe\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Tictactoe.sol\":{\"keccak256\":\"0x1e1d854260d257e056a59a338696c2280be07593402baac079eaf62305cc29a4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://11af1ad488c4b655c2c872cf53ba162b06f90668aab951c076a9b2bf93bccf69\",\"dweb:/ipfs/QmRm5Yvgxs4RGT4y7pbdqZx5E6pMujYvfKXuenjNDjiUYd\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220072570792b0193ce9fed6b1371e5d7f60509d68783488192bd0294316e7044dd64736f6c634300080d0033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220072570792b0193ce9fed6b1371e5d7f60509d68783488192bd0294316e7044dd64736f6c634300080d0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "66:51:1:-:0;;;89:26;;;;;;;;;;66:51;;;;;;",
+  "deployedSourceMap": "66:51:1:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Tictactoe {\n  constructor() public {\n  }\n}\n",
+  "sourcePath": "E:\\JobHunting\\20220511_Axelar\\solidity-tictactoe\\smart-contract\\contracts\\Tictactoe.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Tictactoe.sol",
+    "exportedSymbols": {
+      "Tictactoe": [
+        39
+      ]
+    },
+    "id": 40,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 34,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Tictactoe",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 39,
+        "linearizedBaseContracts": [
+          39
+        ],
+        "name": "Tictactoe",
+        "nameLocation": "75:9:1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 37,
+              "nodeType": "Block",
+              "src": "110:5:1",
+              "statements": []
+            },
+            "id": 38,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 35,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "100:2:1"
+            },
+            "returnParameters": {
+              "id": 36,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "110:0:1"
+            },
+            "scope": 39,
+            "src": "89:26:1",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 40,
+        "src": "66:51:1",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:86:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.13+commit.abaa5c0e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-05-11T21:58:33.271Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
