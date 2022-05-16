@@ -24,7 +24,7 @@ contract Tictactoe {
         uint256 emptyCells;
     }
 
-    mapping (uint256 => Game) private games;
+    mapping (uint256 => Game) public games;
     uint256 private counter;
 
     constructor() public {
@@ -97,9 +97,19 @@ contract Tictactoe {
         }
     }
 
+    function getBoard(uint256 _id) public view isValidGame(_id) returns (uint256[3][3] memory board) {
+        Game storage game = games[_id];
+        for (uint i = 0; i < 3; i++) {
+            for (uint j = 0; j < 3; j++) {
+                board[i][j] = uint256(game.board[i][j]);
+            }
+        }
+    }
+
     function _calcFirstPlayer(address playerOne, address playerTwo) private pure returns (bool) {
-        abi.encodePacked(playerOne, playerTwo);
-        return true;
+        uint256 x = uint256(keccak256(abi.encodePacked(playerOne, playerTwo)));
+        uint256 y = (x >> 255);
+        return y == 0;
     }
 
     event GameCreated(uint256 id, address creator);
